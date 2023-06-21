@@ -1,5 +1,6 @@
 package org.br.mineradora.service;
 
+import java.io.ByteArrayInputStream;
 import java.util.List;
 
 import org.br.mineradora.dto.OpportunityDTO;
@@ -12,5 +13,6 @@ import jakarta.enterprise.context.ApplicationScoped;
 public interface OpportunityService {
     void buildOpportunity(ProposalDTO proposal);
     void saveQuotation(QuotationDTO quotation);
-    List<OpportunityDTO> generateOppotunityDate();
+    List<OpportunityDTO> generateOppotunityData();
+    ByteArrayInputStream generateCSVOpportunityReport();
 }
