@@ -15,8 +15,10 @@ import org.br.mineradora.repository.OpportunityRepository;
 import org.br.mineradora.repository.QuotationRepository;
 import org.br.mineradora.utils.CSVHelper;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 
+@ApplicationScoped
 public class OpportunityServiceImpl implements OpportunityService {
 
     @Inject 
